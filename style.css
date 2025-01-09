@@ -239,71 +239,77 @@ footer p{
     font-family: "Dongle-regular";
     font-size: 1.4rem;
 }
-@media (max-width: 1177px) {
-    .hero-content h1{
-        line-height: 0.7;
+/* Mobile view: max-width 575px */
+@media (max-width: 575px) {
+    .hero-content h1 {
+        line-height: 0.5;
     }
-    .hero-content p{
-        margin-top: 0;
+    .hero-content p {
+        margin-top: 1rem; /* Changed to proper unit for margin */
         line-height: 0.8;
     }
-    .destinations img{
-        height: 250px;
+    .destinations img {
+        height: 240px;
     }
-    input, textarea{
+    input, textarea {
         width: 100%;
     }
 }
+
+/* Tablet view: max-width 768px */
 @media (max-width: 768px) {
-    .hero-content h1{
-        margin-bottom: 5px;
+    .hero-content h1 {
+        margin-bottom: 4px;
     }
-    .team-member img{
+    .team-member img {
         width: 200px;
         height: 200px;
     }
-    .destination-grid{
+    .destination-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 40px;
     }
 }
-@media (max-width:603px){
-    .hero-content h1{
+
+/* Mobile-specific adjustments: max-width 603px */
+@media (max-width: 603px) {
+    .hero-content h1 {
         font-size: 2rem;
     }
-    .hero-content p{
+    .hero-content p {
         font-size: 1.5rem;
     }
 }
-@media (max-width:430px){
-    header{
+
+/* Smaller mobile view: max-width 430px */
+@media (max-width: 430px) {
+    header {
         display: none;
     }
-    .hero-content h1{
+    .hero-content h1 {
         font-size: 1.3rem;
     }
-    .hero-content p{
+    .hero-content p {
         font-size: 1rem;
     }
-    .hero-button{
+    .hero-button {
         padding: 6px 22px;
         font-size: 16px;
     }
-    .destinations{
+    .destinations {
         font-size: 1.5rem;
     }
-    .destination-grid{
+    .destination-grid {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr; /* Simplified to a single column */
         grid-gap: 40px;
     }
-    .about{
+    .about {
         padding: 0 30px;
     }
-    .team-member img{
+    .team-member img {
         width: 250px;
         height: 250px;
     }
 }
-  
